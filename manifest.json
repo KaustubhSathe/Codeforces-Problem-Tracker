@@ -12,7 +12,11 @@
         "default_icon" : "icon16.png",
         "default_title" : "Codeforces Problem Tracker",
         "default_popup": "popup.html"
-    }    
+    },
+    "permissions" : ["contextMenus"],
+    "background": {
+        "scripts" : ["context.js"]
+    }  
 
 
 
