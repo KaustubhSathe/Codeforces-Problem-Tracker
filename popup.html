@@ -4,151 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Codeforces Problem Tracker</title>
     <link rel="stylesheet" href="popup.css">
-    <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
 </head>
 <body>
-    <nav id="navbar">
-        <ul>
-            <li><a href="popup.html">Understood</a></li>
-            <li><a href="UandI.html">Understood and Implemented</a></li>
-        </ul>
-    </nav>
-    <div class="container" style = "overflow-y: auto;">
-        <table class = "understood">
-            <tr>
-                <td class="problemName" style="word-wrap: break-word">hadsssssssdl</td>
-                <td class="markU"><input type= "radio" name="" onclick=""></td>
-                <td class="markUI"><input type="radio" name="mark"></td>
-            </tr>
-            <tr>
-                <td class="problemName">hell</td>
-                <td class="markU"><input type="radio" name="mark" checked></td>
-                <td class="markUI"></td>
-            </tr>
-            <tr>
-                <td class="problemName">hell</td>
-                <td class="markU"></td>
-                <td class="markUI"></td>
-            </tr>
-            <tr>
-                <td class="problemName">hell</td>
-                <td class="markU"></td>
-                <td class="markUI"></td>
-            </tr>
-            <tr>
-                <td class="problemName">hell</td>
-                <td class="markU"></td>
-                <td class="markUI"></td>
-            </tr>
-            <tr>
-                <td class="problemName">hell</td>
-                <td class="markU"></td>
-                <td class="markUI"></td>
-            </tr>
-            <tr>
-                <td class="problemName">hell</td>
-                <td class="markU"></td>
-                <td class="markUI"></td>
-            </tr>
-
-            <tr>
-                <td class="problemName">hell</td>
-                <td class="markU"></td>
-                <td class="markUI"></td>
-            </tr>
-            <tr>
-                <td class="problemName">hell</td>
-                <td class="markU"></td>
-                <td class="markUI"></td>
-            </tr>
-            <tr>
-                <td class="problemName">hell</td>
-                <td class="markU"></td>
-                <td class="markUI"></td>
-            </tr>
-            <tr>
-                <td class="problemName">hell</td>
-                <td class="markU"></td>
-                <td class="markUI"></td>
-            </tr>
-            <tr>
-                <td class="problemName">hell</td>
-                <td class="markU"></td>
-                <td class="markUI"></td>
-            </tr>
-            <tr>
-                <td class="problemName">hell</td>
-                <td class="markU"></td>
-                <td class="markUI"></td>
-            </tr>
-            <tr>
-                <td class="problemName">hell</td>
-                <td class="markU"></td>
-                <td class="markUI"></td>
-            </tr>
-            <tr>
-                <td class="problemName">hell</td>
-                <td class="markU"></td>
-                <td class="markUI"></td>
-            </tr>
-            <tr>
-                <td class="problemName">hell</td>
-                <td class="markU"></td>
-                <td class="markUI"></td>
-            </tr>
-            <tr>
-                <td class="problemName">hell</td>
-                <td class="markU"></td>
-                <td class="markUI"></td>
-            </tr>
-            <tr>
-                <td class="problemName">hell</td>
-                <td class="markU"></td>
-                <td class="markUI"></td>
-            </tr>
-            <tr>
-                <td class="problemName">hell</td>
-                <td class="markU"></td>
-                <td class="markUI"></td>
-            </tr>
-            <tr>
-                <td class="problemName">hell</td>
-                <td class="markU"></td>
-                <td class="markUI"></td>
-            </tr>
-            <tr>
-                <td class="problemName">hell</td>
-                <td class="markU"></td>
-                <td class="markUI"></td>
-            </tr>
-            <tr>
-                <td class="problemName">hell</td>
-                <td class="markU"></td>
-                <td class="markUI"></td>
-            </tr>
-            <tr>
-                <td class="problemName">hell</td>
-                <td class="markU"></td>
-                <td class="markUI"></td>
-            </tr>
-            <tr>
-                <td class="problemName">hell</td>
-                <td class="markU"></td>
-                <td class="markUI"></td>
-            </tr>
-            <tr>
-                <td class="problemName">hell</td>
-                <td class="markU"></td>
-                <td class="markUI"></td>
-            </tr>
-            <tr>
-                <td class="problemName">hell</td>
-                <td class="markU"></td>
-                <td class="markUI"></td>
-            </tr>
-        </table>
+    <div class="tab">
+        <button class="tablinks"  id = "understoodTab"onclick = "openPage(event,'Understood')">Understood</button>
+        <button class="tablinks" id = "uandiTab"onclick= "openPage(event,'Understood and Implemented')">Understood and Implemented</button>
     </div>
+    <div id="Understood" class="tabcontent">
+        <h3>London</h3>
+        <p>London is the capital city of England.</p>
+    </div>
+    <div id="Understood and Implemented" class="tabcontent">
+        <h3>Paris</h3>
+        <p>Paris is the capital of France.</p>
+    </div>
+    <script src="popup.js"></script>
 </body>
 </html>
