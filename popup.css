@@ -1,48 +1,37 @@
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,regular,italic,600,600italic,700,700italic,800,800italic);
-
 body{
-    font-family: Open Sans;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     width: 300px;
-    height: 450px;
+    height: 500px;
+    background-color: whitesmoke;
+}
+.container{
+    width: 300px;
+}
+.understood{
+    border-style: ridge;
+    table-layout: fixed;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+tr{
+   border-style: solid; 
+   border-width: 1px;
+   height: 10px;
+}
+td{
+    border-style: solid;
+    text-align: left;
+    word-wrap: break-word;
+    padding: 3px;
+    border-width: 1px;
 }
 
-.tab {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    right: 0px;
-    width: 400px;
-    overflow: hidden;
-    border: 1px solid #ccc;
-    background-color: #f1f1f1;
+.problem{
+    text-align: center;
+    width: 70%;
 }
-#understoodTab{
-    width: 113px;
+.tags{
+    text-align: center;
+    width: 30%;
 }
-
-.tab button {
-  background-color: inherit;
-  float: left;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  padding: 10px 10px 10px 16.5px;
-  transition: 0.3s;
-}
-
-
-.tab button:hover {
-  background-color: #ddd;
-}
-
-
-.tab button.active {
-  background-color: #ccc;
-}
-
-.tabcontent {
-  display: none;
-  padding: 6px 12px;
-  border: 1px solid #ccc;
-  border-top: none;
-} 

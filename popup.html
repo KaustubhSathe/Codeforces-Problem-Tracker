@@ -8,17 +8,18 @@
     <link rel="stylesheet" href="popup.css">
 </head>
 <body>
-    <div class="tab">
-        <button class="tablinks"  id = "understoodTab"onclick = "openPage(event,'Understood')">Understood</button>
-        <button class="tablinks" id = "uandiTab"onclick= "openPage(event,'Understood and Implemented')">Understood and Implemented</button>
-    </div>
-    <div id="Understood" class="tabcontent">
-        <h3>London</h3>
-        <p>London is the capital city of England.</p>
-    </div>
-    <div id="Understood and Implemented" class="tabcontent">
-        <h3>Paris</h3>
-        <p>Paris is the capital of France.</p>
+    <div class="container">
+        <table class="understood">
+            <thead>
+                <tr>
+                    <th class = "problem">Problem Name</th>
+                    <th class="tags">Tags</th>
+                </tr>
+            </thead>
+            <tbody>
+            
+            </tbody>
+        </table>
     </div>
     <script src="popup.js"></script>
 </body>

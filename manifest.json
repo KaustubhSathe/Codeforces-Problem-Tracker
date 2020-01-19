@@ -13,11 +13,28 @@
         "default_title" : "Codeforces Problem Tracker",
         "default_popup": "popup.html"
     },
-    "permissions" : ["contextMenus"],
+    "permissions" : [
+        "activeTab",
+        "tabs",
+        "contextMenus",
+        "storage"
+    ],
     "background": {
-        "scripts" : ["context.js"]
-    }  
-
-
-
+        "persistent" : false,
+        "scripts" : ["background.js"]
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "https://codeforces.com/problemset*",
+                "https://codeforces.com/gym/*",
+                "https://codeforces.com/contest/*"
+            ],
+            "run_at": "document_start",
+            "all_frames": true,
+            "js": [
+                "contentScript.js"
+            ]
+        }
+    ]  
 }
